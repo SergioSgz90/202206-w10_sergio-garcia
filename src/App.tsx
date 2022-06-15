@@ -8,7 +8,7 @@ import { dataInput } from "./data/DataInput";
 
 
 function App() {
- const [dataList, setDataList] = useState(dataInput);
+ const [dataList] = useState(dataInput);
 
 
 
