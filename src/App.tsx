@@ -1,16 +1,23 @@
 import React from 'react';
+import { useState } from 'react';
 import './App.css';
 import { Header } from './components/Header';
 import { Controls } from './components/Controls';
-import { Main } from './components/Main';
+import { MainList } from './components/Main';
+import { dataInput } from "./data/DataInput";
+
 
 function App() {
+ const [dataList, setDataList] = useState(dataInput);
+
+
+
   return (
     <body>
       <div className="container">
         <Header></Header>
         <Controls></Controls>
-        <Main></Main>
+        <MainList dataProp={dataList}></MainList>
       </div>
     </body>
   );

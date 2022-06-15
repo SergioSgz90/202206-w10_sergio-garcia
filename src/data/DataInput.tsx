@@ -1,12 +1,13 @@
+import {iDataCharacters} from '../interfaces/iDataCharacters';
 
-export const dataCharacters = [
+export const dataInput: Array<iDataCharacters> = [
   {
     id: 1,
     name: 'Bertin Osborne',
     status: 'Alive',
     profession: 'Youtuber',
     twitter: '@osbourne',
-    picture: 'bertin.jpg',
+    picture: "bertin.jpg",
     alternativeText: 'Osbourne pointing at you',
     selected: true,
   },

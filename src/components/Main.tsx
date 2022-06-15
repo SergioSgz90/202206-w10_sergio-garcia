@@ -1,8 +1,16 @@
 import "../components/Main.css"
-export function Main() {
+import { Gentlemen } from "../components/Gentlemen";
+import { iDataCharacters } from "../interfaces/iDataCharacters";
+
+
+export function MainList({dataProp}:{dataProp: Array<iDataCharacters>} ) {
   return (
     <main className="main">
-      <ul className="gentlemen"></ul>
+      <ul className="gentlemen">
+       {dataProp.map((dataProp) => <Gentlemen 
+       dataProp={dataProp}></Gentlemen> 
+       )}
+      </ul>
     </main>
   );
 }
