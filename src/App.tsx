@@ -1,25 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import { Header } from './components/Header';
+import { Controls } from './components/Controls';
+import { MainList } from './components/Main';
+import { dataInput } from "./data/DataInput";
+
 
 function App() {
+ const [dataList, setDataList] = useState(dataInput);
+
+
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <body>
+      <div className="container">
+        <Header></Header>
+        <Controls></Controls>
+        <MainList dataProp={dataList}></MainList>
+      </div>
+    </body>
   );
 }
 
