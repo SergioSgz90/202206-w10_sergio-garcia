@@ -1,4 +1,4 @@
-import "../components/Header.css"
+
 export function Header () {
     return (
       <header className ="main-header">

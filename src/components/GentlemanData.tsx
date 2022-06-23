@@ -10,10 +10,12 @@ export function GentlemanData({ dataProp }: { dataProp: iDataCharacters }) {
           {dataProp.profession}
         </li>
         <li className="gentleman__data">
-          <span className="gentleman__data-label">Status:</span> {dataProp.status}
+          <span className="gentleman__data-label">Status:</span>{' '}
+          {dataProp.status}
         </li>
         <li className="gentleman__data">
-          <span className="gentleman__data-label">Twitter:</span> {dataProp.twitter}
+          <span className="gentleman__data-label">Twitter:</span>{' '}
+          {dataProp.twitter}
         </li>
       </ul>
     </div>
