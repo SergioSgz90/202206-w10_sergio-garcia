@@ -1,0 +1,24 @@
+{
+  "characters": [
+    {
+      "name": "Michael Scott",
+      "status": "Alive",
+      "profession": "Regional Manager at DM",
+      "twitter": "@BestBossEver",
+      "picture": "https://upload.wikimedia.org/wikipedia/en/thumb/d/dc/MichaelScott.png/220px-MichaelScott.png",
+      "alternativeText": "Michael ",
+      "selected": false,
+      "id": 3
+    },
+    {
+      "name": "Dwight Schrute",
+      "status": "Alive",
+      "profession": "Assistant of the RManager",
+      "twitter": "@schrutefarms",
+      "picture": "dwight.jpg",
+      "alternativeText": "Dwight is pointing at you",
+      "id": 1,
+      "selected": true
+    }
+  ]
+}

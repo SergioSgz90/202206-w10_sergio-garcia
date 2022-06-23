@@ -1,12 +1,23 @@
-import '../components/Controls.css';
-export function Controls() {
+
+export function Controls({ 
+  counter,
+  allSelected,
+  handleButtonSelect, 
+ }: { 
+  counter: number;
+  allSelected: boolean;
+  handleButtonSelect: (select: boolean) => void;
+
+}, 
+ ) {
 
 
-    return (
-      <section className="controls">
-        <p className="info">0 gentlemen pointing at you</p>
-        <button className="button button--select">Select all</button>
-      </section>
-    );
-
+  return (
+    <section className="controls">
+      <p className="info">{counter} gentlemen pointing at you</p>
+      <button className="button button--select" onClick={()=>handleButtonSelect(!allSelected)}>
+        {allSelected? "Unselect all" : "Select all"}
+      </button>
+    </section>
+  );
 }
