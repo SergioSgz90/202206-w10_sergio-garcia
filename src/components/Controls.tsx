@@ -1,9 +1,11 @@
 
 export function Controls({ 
+
   counter,
   allSelected,
   handleButtonSelect, 
  }: { 
+  
   counter: number;
   allSelected: boolean;
   handleButtonSelect: (select: boolean) => void;
