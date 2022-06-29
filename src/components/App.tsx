@@ -4,7 +4,7 @@ import { Header } from '../components/Header';
 import { Controls } from '../components/Controls';
 import { MainList } from './MainList';
 import * as api from '../services/http-Characters';
-import { iDataCharacters } from '../interfaces/iDataCharacters';
+import { Character, iDataCharacters } from '../interfaces/iDataCharacters';
 import { FormAddGentleman } from './FormAddGentleman';
 
 function App() {
@@ -13,14 +13,14 @@ function App() {
 
   useEffect(() => {
     api.getAllCharacters().then((charData) => {
-      setData(charData)
+      setData(charData);
     });
   }, []);
 
   const handleAdd = (character: iDataCharacters) => {
-    api.addCharacters(character).then((charData) =>
-    setData([...data, charData])
-    )
+    api
+      .addCharacters(character)
+      .then((charData) => setData([...data, charData]));
   };
 
   const countGent = () => {
@@ -29,26 +29,22 @@ function App() {
     return counter;
   };
 
-  const handleButtonSelect = (char: iDataCharacters ) => {
-    api.updateCharacter(char).then((charData) =>
-    setData(data.map((item) => ({ ...item, selected: select})))
-    )
+  const handleButtonSelect = (select: boolean): void => {
+    setData(data.map((item) => ({ ...item, selected: select })));
   };
 
   const handleDelete = (elementId: number) => {
-    api.deleteCharacter(elementId).then((resp )=> {
-    if (resp.ok) {
-    setData(data.filter((el) => el.id !== elementId && el));
-  }
-  
-})
-   
-};
+    api.deleteCharacter(elementId).then((resp) => {
+      if (resp.ok) {
+        setData(data.filter((el) => el.id !== elementId && el));
+      }
+    });
+  };
 
-  const handleApproveBtn = (elementId: number) => {
+  const handleApproveBtn = (elementID:number) => {
     setData(
       data.map((item) =>
-        item.id === elementId ? { ...item, selected: !item.selected } : item
+        item.id === elementID ? { ...item, selected: !item.selected } : item
       )
     );
   };

@@ -5,8 +5,8 @@ export function GentlemenButtons({
   handleApproveBtn,
   dataProp,
 }: {
-  handleDelete: (elementID: number) => void;
-  handleApproveBtn: (elementID: number) => void;
+  handleDelete: (elementID: any) => void;
+  handleApproveBtn: (elementID:any) => void;
   dataProp: iDataCharacters;
 }) {
   return (
