@@ -6,13 +6,13 @@ export function GentlemenButtons({
   dataProp,
 }: {
   handleDelete: (elementID: any) => void;
-  handleApproveBtn: (elementID:any) => void;
+  handleApproveBtn: (character: iDataCharacters) => void;
   dataProp: iDataCharacters;
 }) {
   return (
     <>
       <i className="icon gentleman__icon fas fa-check"
-      onClick={() => handleApproveBtn(dataProp.id)}
+      onClick={() => handleApproveBtn(dataProp)}
       ></i>
       <i
         className="icon gentleman__icon gentleman__icon--delete fas fa-times"
