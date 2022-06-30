@@ -4,7 +4,7 @@ import { Header } from "../components/Header";
 import { Controls } from "../components/Controls";
 import { MainList } from "./MainList";
 import * as api from "../services/http-Characters";
-import { Character, iDataCharacters } from "../interfaces/iDataCharacters";
+import {iDataCharacters } from "../interfaces/iDataCharacters";
 import { FormAddGentleman } from "./FormAddGentleman";
 
 function App() {
