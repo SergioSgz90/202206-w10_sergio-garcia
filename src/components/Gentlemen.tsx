@@ -10,7 +10,7 @@ export function Gentlemen({
 }: {
   dataProp: iDataCharacters;
   handleDelete: (elementID: number) => void;
-  handleApproveBtn: (elementID: number) => void;
+  handleApproveBtn: (character: iDataCharacters) => void;
 
 }) {
 

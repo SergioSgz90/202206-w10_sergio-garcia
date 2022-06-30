@@ -8,7 +8,7 @@
       "picture": "dwight.jpg",
       "alternativeText": "Dwight is pointing at you",
       "id": 1,
-      "selected": false
+      "selected": true
     },
     {
       "name": "Michael",
@@ -19,16 +19,6 @@
       "alternativeText": "Michael ",
       "selected": false,
       "id": 2
-    },
-    {
-      "name": "Philip. J Fry",
-      "status": "Alive",
-      "profession": "Intergalactic delivery boy",
-      "twitter": "N/A",
-      "picture": "https://www.slurmed.com/fanart/javier/092_fry-mad-pointing.gif",
-      "alternativeText": "Fry",
-      "selected": false,
-      "id": 3
     }
   ]
 }

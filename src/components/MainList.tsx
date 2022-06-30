@@ -8,7 +8,7 @@ export function MainList({
 }: {
   dataProp: Array<iDataCharacters>;
   handleDelete: (elementID: number) => void;
-  handleApproveBtn: (elementID: number) => void;
+  handleApproveBtn: (character: iDataCharacters) => void;
 }) {
   return (
     <main className="main">

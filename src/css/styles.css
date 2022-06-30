@@ -12,6 +12,7 @@ body {
     margin: 0;
     color: var(--text-color);
     font-family: 'Open Sans', sans-serif;
+    background-color: #282c34;
 }
 ul,
 li {
@@ -27,10 +28,11 @@ button {
 h1,
 h2 {
     margin: 0;
+    margin-bottom: 2%;
 }
 .container {
     background-color: var(--background-main-color);
-    width: 800px;
+    width: 50%;
     margin: 0 auto;
     padding: 20px;
 }
@@ -145,6 +147,7 @@ h2 {
     justify-content: center;
     margin: auto;
     margin-top: 5%;
+    margin-bottom: 2%;
     align-content: center;
 
 }
